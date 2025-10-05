@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Luo Group - Research</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Fig/logo2.png" ">
+            <h1>QUANTUM NANOPHOTONICS LABORATORY</h1>
+        
+        <nav>
+            <ul>
+                <li><a href=" index.html">Home</a></li>
+            <li><a href="research.htm" style="text-decoration: underline;">Research</a></li>
+            <li><a href="members.htm">Members</a></li>
+            <li><a href="facilities.htm">Facilities</a></li>
+            <li><a href="publications.htm">Publications</a></li>
+            <li><a href="teaching.htm">Teaching</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Sidebar navigation menu -->
+
+    <div class="sidebar">
+        <ul class="nav-menu2">
+            <li><a href="research.htm"><strong>Research Home</strong></a></li>
+            <li><a href="R1.htm"><strong>Polaritons in Low Dimensional Materials</strong></a></li>
+            <li><a href="R2.htm"><strong>Quantum Light Source and Cavity QED</strong></a></li>
+            <li><a href="R3.htm"><strong>Numerical Simulation of Quantum Materials</strong></a></li>
+            <!-- More sections as needed -->
+        </ul>
+    </div>
+
+    <div class="content">
+
+
+
+        <div class="section-flex">
+            <!-- Content for Section 1 -->
+
+            <div class="text-content">
+                <h2>Polaritons in Low Dimensional Materials</h2>
+                <p>Polaritons are quasiparticles resulting from strong coupling of electromagnetic waves with collective
+                    oscillations such as conduction electrons, phonons, and excitons, as well as their hybrids.</p>
+                <p>Our researches focus on polaritons supported by low dimensional materials, such as surface plamson
+                    polariton in graphene, phonon polaritons in h-BN, exciton polaritons in TMDs etc. We also ultize
+                    those polaritons as tools for nano-imaging, molecule sensing and polaritonic devices.</p>
+                <p><strong>References:</strong></p>
+                <p style="font-size: 14px;">1.Luo, Y., et al., <em>Nat. Commun.</em> 11, 4209 (2020).</p>
+                <p style="font-size: 14px;">2.Luo, Y., et al., <em>Nat. Nanotechnol.</em> 18, 350–356 (2023).</p>
+
+            </div>
+            <div class="image-container">
+                <img src="Fig/R1_1.jpg">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <!-- More sections as needed -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023-2025 Luo Group</p>
+    </footer>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            var navLinks = document.querySelectorAll('.nav-menu a');
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+
+                    var sectionId = this.getAttribute('href');
+                    var sectionToShow = document.querySelector(sectionId);
+
+                    // Hide all sections
+                    document.querySelectorAll('.hidden-section').forEach(function (section) {
+                        section.classList.remove('show-section');
+                    });
+
+                    // Show the clicked section
+                    if (sectionToShow) {
+                        sectionToShow.classList.add('show-section');
+                    }
+
+                    // Update the URL hash
+                    window.location.hash = sectionId;
+                });
+            });
+
+            // Optionally, show a section based on the initial URL hash
+            var hash = window.location.hash;
+            if (hash && document.querySelector(hash + '.hidden-section')) {
+                document.querySelector(hash + '.hidden-section').classList.add('show-section');
+            }
+        });</script>
+</body>

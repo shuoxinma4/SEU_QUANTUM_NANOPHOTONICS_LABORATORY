@@ -1,34 +1,97 @@
 <!DOCTYPE html>
-<!-- saved from url=(0077)https://electronic.seu.edu.cn/_upload/tpl/0b/93/2963/template2963/contact.htm -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Luo Group - Research</title>
-    <link rel="stylesheet" type="text/css" href="./index_files/style.css">
+<html class="webplus-main">
+
+<head>
+    <title>Luo Group</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-       <header>
+    <header>
         <div class="header-content">
-			<img src="./index_files/logo2.png">
+            <img src="Fig/logo2.png">
             <h1>QUANTUM NANOPHOTONICS LABORATORY</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="https://electronic.seu.edu.cn/_upload/tpl/0b/93/2963/template2963/main.htm">Home</a></li>
-                <li><a href="https://electronic.seu.edu.cn/_upload/tpl/0b/93/2963/template2963/research.htm">Research</a></li>
-                <li><a href="https://electronic.seu.edu.cn/_upload/tpl/0b/93/2963/template2963/members.htm">Members</a></li>
-                <li><a href="https://electronic.seu.edu.cn/_upload/tpl/0b/93/2963/template2963/publications.htm">Publications</a></li>
-				<li><a href="https://electronic.seu.edu.cn/_upload/tpl/0b/93/2963/template2963/teaching.htm">Teaching</a></li>
-                <li><a href="https://electronic.seu.edu.cn/_upload/tpl/0b/93/2963/template2963/contact.htm">Contact</a></li>
-            </ul>
-        </nav>
-			</div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="text-decoration: underline;">Home</a></li>
+                    <li><a href="research.htm">Research</a></li>
+                    <li><a href="members.htm">Members</a></li>
+                    <li><a href="facilities.htm">Facilities</a></li>
+                    <li><a href="publications.htm">Publications</a></li>
+                    <li><a href="teaching.htm">Teaching</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Research Section -->
-    <!-- Footer -->
+    <section id="intro">
+        <h2>WELCOME TO OUR RESEARCH GROUP</h2>
+        <h1> AT SOUTHEAST UNIVERSITY</h1>
+
+    </section>
+
+    <section id="home">
+
+        <div class="slideshow-container">
+
+            <div class="slide fade">
+                <img src="Fig/image1.jpg" style="height:1000">
+
+            </div>
+            <div class="slide fade">
+                <img src="Fig/image2.jpg" style="height:1000">
+
+            </div>
+            <div class="slide fade">
+                <img src="Fig/image3.jpg" style="height:1000">
+
+            </div>
+            <div class="slide fade">
+                <img src="Fig/image4.jpg" style="height:1000">
+
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>� 2023 Luo Group</p>
+        <p>&copy; 2023 Luo Group</p>
     </footer>
+    <script>
+        var slideIndex = 0; javascript: void (0);
+        showSlides();
 
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menus = document.querySelectorAll('.nav-menu > li');
 
+            menus.forEach(function (menu) {
+                menu.addEventListener('mouseenter', function () {
+                    this.querySelector('.dropdown').style.display = 'block';
+                });
 
-</body></html>
+                menu.addEventListener('mouseleave', function () {
+                    var dropdown = this.querySelector('.dropdown');
+                    dropdown.style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
+<img src="../_visitcount@siteId=520&amp;type=1&amp;columnId=50980.html" style="display:none" width="0" height="0" />
