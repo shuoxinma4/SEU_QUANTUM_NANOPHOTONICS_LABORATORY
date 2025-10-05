@@ -1,0 +1,352 @@
+/* CSS Document */
+
+html,body {
+    font-family: Arial, sans-serif;
+	height: 100%; /* Make sure the html and body take up full viewport height */
+	width:100%;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color:black;
+}
+
+header {
+	height: 6%; /* Adjust based on your header size */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 0.5em;
+}
+.header-content {
+    display: flex; /* Enables Flexbox */
+	align-items: flex-end;
+	height: 5%; /* Adjust based on your header size */
+	width: 90%;
+	margin-left: 5%;
+
+    align-items: center; /* Vertically centers the items */
+    justify-content: start; /* Aligns items to the start of the container */
+}
+.header-content img{
+height:3em;
+}
+.logo {
+    height: 2em; /* Adjust based on your logo's size */
+    margin-right: 0%; /* Space between logo and title */
+}
+.header-content h1 {
+    margin: 0;
+	width:50%;
+margin-left:2%;
+color: darkblue;
+    text-align: left;
+ line-height: 1;
+font-size: 24pt;
+}
+/* Style your header */
+.intro h1 {
+    margin: 0;
+	width:25em;
+margin-left:5em;
+color: darkblue;
+    text-align: center;
+}
+.title h1 {
+    margin: 0;
+margin-left:2em;
+color: darkblue;
+    text-align: center;
+}
+.title h2 {
+    margin: 0;
+    text-align: center;
+}
+.title h2 {
+    margin: 0;
+    text-align: center;
+	font-size: 14pt;
+	color: darkred
+}
+.nav{
+margin-left:50em;
+}
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+	margin-right: 50%;
+
+}
+
+nav ul li {
+    margin-left: 2%;
+	margin-right: 2%;
+}
+
+nav ul li a {
+    text-decoration: none;
+text-align:left;
+    font-size:16pt;
+    color: darkblue;
+}
+.content{
+
+	width: 60%; /* Set an initial width */
+	margin-top: 6em;
+ margin-left: 25%;
+  padding: 0.5em; /* Add some padding for spacing */
+
+
+	
+}
+section {
+    padding: 0.5em;
+	width: 60%;
+	align-items: center;
+	margin:0 auto;
+}
+
+#section2*{
+font-size:20px;
+vertical-align:middle;
+}
+section img {
+    max-width: 80%; /* Ensure images are not larger than their container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* For block level */
+    margin: 0 auto; /* Center the image */
+    padding-top: 20px; /* Space between the text and the image */
+}
+footer {
+    text-align: center;
+	height: 5%; /* Adjust based on your header size */
+    padding: 0.5em;
+    background: #f4f4f4;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 70%; /* Width of the slideshow */
+  
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden; /* To hide the overflowed parts of images */
+}
+
+/* Hide the images by default */
+.slide {
+  display: none;
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+}
+
+/* Each image within a slide */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This makes the image cover the full area, cropping if necessary */
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+#intro {
+    width: 60em; /* Or set a fixed width in pixels */
+    margin: 0 auto; /* This centers the section */
+	text-align: center;
+    /*background-color: #f3f3f3; /* Background color of the section */
+    /* Add more styling as needed */
+}
+.caption {
+    color: #fff; /* Caption text color */
+    font-size: 16px; /* Caption font size */
+    text-align: left; /* Align text to the center */
+    padding: 8px 12px; /* Padding around the text */
+    position: absolute; /* Positioning the caption */
+    bottom: 8px; /* Distance from the bottom of the slide */
+    width: 100%; /* Full width of the slide */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Space between member entries */
+}
+
+.member-photo {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
+    object-fit: cover; /* Ensures the photo covers the area, useful for different aspect ratios */
+    border-radius: 50%; /* Circular photos */
+    margin-right: 20px; /* Space between photo and description */
+}
+
+.member-info {
+    flex-grow: 1;
+}
+
+.member-info h3 {
+    margin-top: 0;
+	color:darkred
+}
+
+.publication-list {
+    list-style-type: decimal;
+    padding-left: 100px; /* Adjusts the indentation of the list */
+}
+
+.publication-list li {
+    margin-bottom: 25px; /* Space between each publication */
+}
+/* Style for the main navigation menu */
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu > li {
+    position: relative; /* Needed for absolute positioning of dropdowns */
+    display: inline-block; /* Horizontal list items */
+}
+
+/* Style for the dropdown menus */
+.dropdown {
+    display: none; /* Hide dropdowns */
+    position: absolute; /* Positioning relative to the parent item */
+    list-style-type: none;
+    margin-top: 1em; /* Spacing from the main menu */
+    padding: 0;
+}
+
+/* Show dropdown when hovering over a list item */
+.nav-menu > li:hover .dropdown {
+    display: block;
+}
+
+/* Style for the dropdown items */
+.dropdown li {
+    padding: 5px 10px; /* Adjust as needed */
+    white-space: nowrap; /* Prevents wrapping of text */
+	background-color: #f4f4f4
+}
+
+/* Optional: Style for links */
+.nav-menu a {
+    text-decoration: none;
+    padding: 5px 10px; /* Adjust as needed */
+    display: block;
+}
+
+/* Style for hovering over the links */
+.nav-menu a:hover {
+    background-color: #ddd; /* Background color on hover */
+}
+/* Style for the arrow */
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+}
+.nav-menu > li:hover .arrow {
+    /* Optional: Style changes for arrow on hover */
+}
+/* Style for the dropdown toggle button (arrow) */
+.dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0;
+}
+
+
+.sidebar {
+	display: inline-block;
+	margin-left: 18%; /* Left margin of 1000 pixels */
+	margin-top: 10em;
+	margin-bot:8%;
+ line-height: 1;
+    float:left;
+    width: 15%; /* Width of the sidebar */
+    background-color: #fff; /* Optional: Background color for the sidebar */
+}
+/* Styling for the navigation menu */
+.nav-menu2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu2 li {
+    background-color: rgba(74,102,182,1.00); /* Dark red background for menu items */
+    margin: 5px;
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.nav-menu2 li a {
+    color: white; /* Text color */
+    padding: 10px; /* Spacing around the text */
+    display: block; /* Makes the entire area clickable */
+    text-decoration: none; /* No underline */
+}
+
+.nav-menu2 li a:hover {
+    background-color: #a52a2a; /* Slightly lighter red on hover */
+}
+.hidden-section {
+    display: none; /* Hide all sections by default */
+}
+
+.show-section {
+    display: block; /* Show section */
+    /* Additional styling for visible sections */
+    margin: auto;
+    width: 60%; /* Adjust width as needed */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* Other styles as per your design */
+}
+
+.section-flex {
+    display: flex;
+margin-left: 15%;
+    align-items: center; /* Align items vertically in the middle */
+    justify-content: space-between; /* Spacing between text and image containers */
+    padding: 0.5em; /* Padding around the section */
+
+
+}
+
+.text-content {
+    flex-basis: 60%; /* Assigns 50% of the space to text content */
+    padding-right: 20px; /* Optional: Spacing between text and images */
+}
+
+.image-container {
+    flex-basis: 40%; /* Assigns 50% of the space to image container */
+    witdth:20em;
+    text-align: center; /* Center align images */
+    padding: 0.5em; /* Padding around the container */
+
+}
+
+.image-container img {
+    max-width: 20em; /* Ensure images are not larger than their container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Spacing between images */
+    display: inline-block; /* Images side by side */
+
+}
+
+/* Add more styling as needed */
+
+
