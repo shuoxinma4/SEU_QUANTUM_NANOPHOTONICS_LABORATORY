@@ -2,9 +2,9 @@
 #纳米光子学实验室 @SEU电子学院
 ## 主页维护
 ### 维护
-直接编辑HTML并推送
+编辑HTML并推送往github，floudflare自动同步并发布
 ### 部署
-- 仓库托管于https://github.com/shuoxinma4/SEU_QUANTUM_NANOPHOTONICS_LABORATORY
+- 公开仓库托管于https://github.com/shuoxinma4/SEU_QUANTUM_NANOPHOTONICS_LABORATORY
 - 网页托管于cloudflare，shuoxinma账号
 ### 新建
 - 注册github,注册cloudflare
