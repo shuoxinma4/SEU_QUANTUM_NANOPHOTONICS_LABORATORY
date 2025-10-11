@@ -1,3 +1,14 @@
+/* Center the News caption in the news container */
+.news-container .news-title {
+    text-align: center;
+    margin-top: 0;
+}
+.content h4 {
+    margin-bottom: 0.3em;
+}
+.content p {
+    margin-top: 0.3em;
+}
 /* CSS Document */
 
 html,body {
@@ -349,4 +360,28 @@ margin-left: 15%;
 
 /* Add more styling as needed */
 
+.news-entry {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    text-align: left;
+}
+.news-entry img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 12px;
+    background: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.news-entry > div {
+    display: block;
+    min-width: 0;
+    flex: 1;
+}
 
+.hidden-news {
+    display: none !important;
+}
